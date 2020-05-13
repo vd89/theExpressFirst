@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary to Decimal && Decimal to Binary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="outPutlab">Number converter</h1>
+    <p>
+      You can convert decimal value to Binary and then from Binary to Decimal
+    </p>
+    <div class="container">
+      <form>
+      <div class="converter">
+        <select name="" id="selecter">
+          <option value="dec" >Decimal</option>
+          <option value="bin" >Binary</option>
+          <option value="hex">Hexadecimal</option>
+          <option value="oct">Octadecimal</option>
+        </select>
+        <input type="number" id="inputOne" placeholder="0" value="" />
+      </div>
+      <div class="swap-converter">
+        <button class="btn" id="convert"></button>
+
+        <div class="error" id="error"></div>
+      </div>
+      <div class="converter">
+        <label for="hex" id="hexLab">Hexadecimal</label>
+        <textarea name="Hexadecimal" id="hex" cols="25" rows="5"disabled></textarea>
+      </div>
+      <div class="converter">
+        <label for="oct" id="octLab">Octadecimal</label>
+        <textarea name="Octadecimal" id="oct"cols="25" rows="5" disabled></textarea>
+      </div>
+      <div class="converter">
+        <label for="bin" id="binLab">Binary</label>
+        <textarea name="Binary" id="bin" cols="25" rows="5" disabled></textarea>
+      </div>
+      <input type="reset" value="Reset" id="reset1" class="btn" >
+      </form>
+    </div>
+  </body>
+  <script src="./js/converter.js"></script>
+  <script src="./js/script.js"></script>
+</html>
